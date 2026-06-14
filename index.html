@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ann Financials</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+            background: #ffffff;
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        header {
+            padding: 30px 40px;
+            border-bottom: 3px solid #10b981;
+            background: #ffffff;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #047857;
+            letter-spacing: -0.5px;
+        }
+
+        /* Main content */
+        .main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        /* Apps grid */
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        /* App card */
+        .app-card {
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .app-card:hover {
+            border-color: #10b981;
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .app-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #047857;
+            margin-bottom: 12px;
+        }
+
+        .app-description {
+            font-size: 0.95rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .app-card a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #10b981;
+            text-decoration: none;
+            font-weight: 600;
+            transition: gap 0.3s ease;
+        }
+
+        .app-card a:hover {
+            gap: 12px;
+        }
+
+        .arrow {
+            font-size: 1.2em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                padding: 24px 20px;
+            }
+
+            header h1 {
+                font-size: 1.6rem;
+            }
+
+            .main {
+                padding: 30px 20px;
+            }
+
+            .apps-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .app-card {
+                padding: 24px;
+            }
+
+            .app-name {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 20px 16px;
+            }
+
+            header h1 {
+                font-size: 1.3rem;
+            }
+
+            .main {
+                padding: 20px 16px;
+            }
+
+            .app-card {
+                padding: 20px;
+            }
+
+            .icon {
+                font-size: 40px;
+            }
+
+            .app-name {
+                font-size: 1.1rem;
+            }
+
+            .app-description {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>Ann Financials</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main">
+        <div class="container">
+            <div class="apps-grid">
+                <!-- CashBook Card -->
+                <div class="app-card">
+                    <div class="icon">💰</div>
+                    <h2 class="app-name">CashBook</h2>
+                    <p class="app-description">Financial Intelligence System for managing and visualizing investments with intuitive analytics.</p>
+                    <a href="https://cashbook-461183623616.asia-south2.run.app/home">
+                        Open App <span class="arrow">→</span>
+                    </a>
+                </div>
+
+                <!-- Vault Card -->
+                <div class="app-card">
+                    <div class="icon">🏦</div>
+                    <h2 class="app-name">Cortana</h2>
+                    <p class="app-description">AI Playbook with analytics</p>
+                    <a href="https://job-app-52124307220.asia-south1.run.app/">
+                        Open App <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
